@@ -1,8 +1,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-
 import Header from "./Header/header";
-import "./layout.css";
+import "../components/Layout/styles.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -16,7 +15,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <div className="container">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -37,7 +36,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   );
 };
 
