@@ -9,10 +9,36 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Prestige Vistos`,
+    description: `Inicie seu próximo grande projeto com um site que reflete a excelência da Prestige Vistos. Com mais de 4 anos de experiência, a Prestige Vistos é especializada na obtenção e renovação de vistos americanos, além de serviços complementares como emissão de passaportes e apostilamento. Oferecemos atendimento ágil e personalizado, garantindo alta taxa de aprovação e segurança em todas as etapas do processo. Nossa missão é facilitar sua viagem internacional com cuidado, compromisso e confiança.`,
+    author: `@IsisAS`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    menus: [
+      {
+        title: "Início",
+        route: "/home",
+      },
+      {
+        title: "Depoimentos",
+        route: "/testimony",
+      },
+      {
+        title: "Quem Somos",
+        route: "/whoWeAre",
+      },
+      {
+        title: "Serviços",
+        route: "/services",
+      },
+      {
+        title: "Perguntas Frequentes",
+        route: "/commonQuestions",
+      },
+      {
+        title: "Contato",
+        route: "/contact",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -37,7 +63,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
       },
     },
   ],
