@@ -12,7 +12,20 @@
   align-items: center;
 }
 
-.menu-items{
-    color: white;
-    text-decoration: none;
+.menu-items {
+  color: white;
+  text-decoration: none;
+}
+
+.title-route {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.title-route-activated {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }

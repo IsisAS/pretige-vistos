@@ -17,32 +17,40 @@ module.exports = {
       {
         title: "Início",
         route: "/home",
+        activated: true,
       },
       {
         title: "Depoimentos",
         route: "/testimony",
+        activated: false,
       },
       {
         title: "Quem Somos",
         route: "/whoWeAre",
+        activated: false,
       },
       {
         title: "Serviços",
         route: "/services",
+        activated: false,
       },
       {
         title: "Perguntas Frequentes",
         route: "/commonQuestions",
+        activated: false,
       },
       {
         title: "Contato",
         route: "/contact",
+        activated: false,
       },
     ],
   },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,8 +58,16 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat\:300,400,500,600,700`,
+          `Playfair Display\:400,700,900`,  
+        ],
+        display: "swap",
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -63,7 +79,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/logo-icon.png`, // This path is relative to the root of the site.
       },
     },
   ],

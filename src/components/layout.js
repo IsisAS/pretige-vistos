@@ -9,7 +9,6 @@ const Layout = ({ children }) => {
       <div className="container-video">
         <video autoPlay muted loop className="video-background">
           <source src={BackgroundVideo} type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
         <div className="container-background"/>
         <Header />
