@@ -1,10 +1,8 @@
 import * as React from "react";
 import { navigate } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
-
 import Logo from "../../assets/images/logo.png";
 import "./styles.scss";
-
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -25,9 +23,10 @@ const Header = () => {
     route: string;
     activated: boolean;
     title: string;
-  }
+  };
 
   const [menus, setMenus] = React.useState(data.site.siteMetadata.menus);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     setMenus((prevMenus) =>
@@ -44,13 +43,20 @@ const Header = () => {
       ...menu,
       activated: menu.route === route.route,
     })));
+    // setIsMenuOpen(false);
     // navigate(route.route);
   };
 
   return (
     <header className="container">
-      <img height={40} style={{ margin: 0 }} src={Logo} alt="Logo" />
-      <div className="container-menus">
+      <div className={isMenuOpen ? "menu-icon-left" :"menu-icon"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <i className='bx bx-menu icon'></i>
+      </div>
+
+      <img height={40} style={{ margin: 0 }} src={Logo} alt="Logo" className="logo" />
+
+      <div className={`container-menus ${isMenuOpen ? "open" : ""}`}>
+        <img height={40} style={{ margin: 0 }} src={Logo} alt="Logo" className="logo-mobile" />
         {menus.map((menu: Menu, index) => (
           <div
             className={menu.activated ? "title-route-activated" : "title-route"}

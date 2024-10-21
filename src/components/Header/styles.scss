@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+.logo-mobile {
+  display: none;
 }
 
 .container-menus {
@@ -12,20 +17,107 @@
   align-items: center;
 }
 
-.menu-items {
-  color: white;
-  text-decoration: none;
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
-.title-route {
+.menu-icon-left {
+  margin-left: 160px;
+}
+
+// .container-menus {
+//   flex-direction: column;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   background-color: rgb(171, 15, 15);
+//   padding: 20px;
+//   border-radius: 5px;
+//   height: 100vh;
+//   width: 180px;
+//   z-index: 1000;
+//   transform: translateX(-100%);
+//   opacity: 0;
+//   transition: transform 0.3s ease, opacity 0.3s ease;
+//   overflow-y: auto;
+// }
+
+// .container-menus.open {
+//   transform: translateX(0);
+//   opacity: 1;
+// }
+
+.title-route,
+.title-route-activated {
   font-family: "Montserrat", sans-serif;
+  padding: 10px;
   color: white;
   cursor: pointer;
 }
 
 .title-route-activated {
   color: var(--primary-color);
-  font-weight: 700;
   font-family: "Montserrat", sans-serif;
-  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .container-menus {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .container-menus.open {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .icon {
+    color: white;
+    font-size: 22px;
+  }
+
+  .title-route,
+  .title-route-activated {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .title-route-activated {
+    background-color: #b981196b;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-radius: 50px;
+  }
 }
