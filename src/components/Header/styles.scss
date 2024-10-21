@@ -26,29 +26,6 @@
   margin-left: 160px;
 }
 
-// .container-menus {
-//   flex-direction: column;
-//   position: fixed;
-//   top: 0;
-//   right: 0;
-//   left: 0;
-//   background-color: rgb(171, 15, 15);
-//   padding: 20px;
-//   border-radius: 5px;
-//   height: 100vh;
-//   width: 180px;
-//   z-index: 1000;
-//   transform: translateX(-100%);
-//   opacity: 0;
-//   transition: transform 0.3s ease, opacity 0.3s ease;
-//   overflow-y: auto;
-// }
-
-// .container-menus.open {
-//   transform: translateX(0);
-//   opacity: 1;
-// }
-
 .title-route,
 .title-route-activated {
   font-family: "Montserrat", sans-serif;
