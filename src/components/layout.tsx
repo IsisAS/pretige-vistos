@@ -3,7 +3,11 @@ import Header from "./Header/header";
 import BackgroundVideo from "../assets/videos/background.mp4";
 import "./layout.css";
 
-const Layout = ({ children }) => {
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <>
       <div className="container-video">
@@ -22,7 +26,7 @@ const Layout = ({ children }) => {
       </div>
       <div
         style={{
-          margin: `0 auto`,
+          margin: "0 auto",
           padding: "32px 40px"
         }}
       >
@@ -40,6 +44,4 @@ const Layout = ({ children }) => {
       </div>
     </>
   );
-};
-
-export default Layout;
+}

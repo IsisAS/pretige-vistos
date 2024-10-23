@@ -1,10 +1,9 @@
 import * as React from "react";
-import { navigate } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 import Logo from "../../assets/images/logo.png";
 import "./styles.scss";
 
-const Header = () => {
+export default function Header(): JSX.Element {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -49,7 +48,7 @@ const Header = () => {
 
   return (
     <header className="container">
-      <div className={isMenuOpen ? "menu-icon-left" :"menu-icon"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <div className={isMenuOpen ? "menu-icon-left" : "menu-icon"} onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <i className='bx bx-menu icon'></i>
       </div>
 
@@ -69,6 +68,4 @@ const Header = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}
