@@ -1,14 +1,13 @@
-.card {
-  background-color: white;
-  width: 280px;
-  height: 300px;
-  border-radius: 15px;
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .containerTitle{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .title{

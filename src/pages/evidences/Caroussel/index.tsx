@@ -1,13 +1,24 @@
-import React from "react"
+import React from "react";
+import * as styles from "./styles.module.scss";
 
-type ICarouselOptions = {
-
+interface Evidence {
+    title: string;
+    evidence: string;
 }
-export default function Carousel(options: ICarouselOptions): JSX.Element {
 
+interface CarouselProps {
+    evidences: Evidence;
+}
+
+const Carousel: React.FC<CarouselProps> = ({ evidences }) => {
     return (
         <div>
-
+            <div className={styles.card}>
+                <h3>{evidences?.title}</h3>
+                <p>{evidences?.evidence}</p>
+            </div>
         </div>
-    )
-}
+    );
+};
+
+export default Carousel;
