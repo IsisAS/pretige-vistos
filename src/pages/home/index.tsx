@@ -1,9 +1,10 @@
 import * as React from "react"
 import Layout from "../../components/layout"
+import Evidences from "../evidences"
 
 const HomePage = () => (
   <Layout>
-    <div> OLa</div>
+    <Evidences />
   </Layout>
 )
 

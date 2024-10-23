@@ -1,0 +1,25 @@
+.card {
+  background-color: white;
+  width: 280px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.containerTitle{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title{
+  color: white;
+  font-family: 'Playfair Display';
+  font-size: 32px;
+  margin: 0;
+}
+
+.subtitle{
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
