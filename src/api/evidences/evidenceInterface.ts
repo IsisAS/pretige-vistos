@@ -1,4 +1,5 @@
 export interface Evidences {
-    title:string;
-    evidence: string;
+  image: string
+  evidence: string
+  userName: string
 }

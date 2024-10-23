@@ -1,8 +1,93 @@
+.container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselTrack {
+  display: inline-flex;
+  gap: 40px;
+}
+
 .card {
-    background-color: white;
-    width: 280px;
-    height: 300px;
-    border-radius: 15px;
-    padding: 20px;
-  }
-  
+  background-color: white;
+  width: 350px;
+  height: 380px;
+  border-radius: 15px;
+  scroll-snap-align: start;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.headerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+  margin-top: auto;
+}
+
+.titleGroup {
+  font-family: "Montserrat", sans-serif;
+  color: var(--light-gray);
+  font-weight: 300 !important;
+  font-size: 14px;
+  margin: 0;
+}
+
+.evidence {
+  font-size: 1rem;
+  line-height: 1.4;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profileImage {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  margin: 0;
+}
+
+.containerUserInformation{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.userName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.approvedText{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--light-gray);
+  margin: 0;
+}
