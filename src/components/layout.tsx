@@ -27,7 +27,6 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       <div
         style={{
           margin: "0 auto",
-          padding: "32px 40px"
         }}
       >
         <main>{children}</main>
