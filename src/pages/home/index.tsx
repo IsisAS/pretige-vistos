@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import Evidences from "../Evidences"
 import WhoAreWe from "../WhoAreWe"
 import Services from "../Services"
+import CommonQuestion from "../CommonQuestion"
 
 export default function Home(): JSX.Element {
   return (
@@ -10,6 +11,7 @@ export default function Home(): JSX.Element {
       <Evidences />
       <WhoAreWe />
       <Services />
+      <CommonQuestion />
     </Layout>
   )
 }

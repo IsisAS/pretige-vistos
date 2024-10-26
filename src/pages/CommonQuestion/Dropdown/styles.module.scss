@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    height: 80px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    border-left-color: var(--secondary-color);
+    border-left-width: 40px;
+    border-left-style: solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.cardAnswer {
+    background-color: white;
+    height: 80px;
+    border-radius: 15px;
+    height: 130px;
+    padding: 20px;
+    line-height: 1.4;
+    white-space: normal;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
