@@ -316,6 +316,44 @@ pre tt:after {
   outline: none;
 }
 
+.footer{
+  background-color: var(--secondary-color); 
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.title-cop{
+  color: #c0c0c0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.image-footer{
+  width: 160px;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #000; 
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff; 
+}
+
 @media (max-width: 768px) {
   .title {
     width: 100%;

@@ -2,6 +2,8 @@ import * as React from "react";
 import Header from "./Header/header";
 import BackgroundVideo from "../assets/videos/background.mp4";
 import "./layout.css";
+import Logo from "../assets/images/logo.png";
+import IconComponent from "./Icon";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -30,16 +32,18 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
         }}
       >
         <main>{children}</main>
-        {/* <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer> */}
+        <footer className="footer">
+          <img src={Logo} className="image-footer" />
+          <p className="title-cop"> © {new Date().getFullYear()} Prestige Vistos. Todos os direitos reservados.</p>
+          <div className="social-icons">
+            <a href="https://www.instagram.com/prestigevistos/?igsh=MWlidnhndGZ6cDhkdw%3D%3D" target="_blank" rel="noreferrer">
+              <IconComponent library="fa" name="FaInstagram" size={32} color="#fff" />
+            </a>
+            <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
+              <IconComponent library="fa" name="FaWhatsapp" size={32} color="#fff" />
+            </a>
+          </div>
+        </footer>
       </div>
     </>
   );
