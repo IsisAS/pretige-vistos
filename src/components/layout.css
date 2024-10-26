@@ -316,8 +316,8 @@ pre tt:after {
   outline: none;
 }
 
-.footer{
-  background-color: var(--secondary-color); 
+.footer {
+  background-color: var(--secondary-color);
   height: 200px;
   width: 100%;
   display: flex;
@@ -326,15 +326,16 @@ pre tt:after {
   padding: 40px 80px;
 }
 
-.title-cop{
+.title-cop {
   color: #c0c0c0;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
 
-.image-footer{
+.image-footer {
   width: 160px;
   object-fit: cover;
+  margin:0;
 }
 
 .social-icons {
@@ -345,13 +346,24 @@ pre tt:after {
 }
 
 .social-icons a {
-  color: #000; 
+  color: #000;
   font-size: 24px;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #007bff; 
+  color: #007bff;
+}
+
+.footer-container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {

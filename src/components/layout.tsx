@@ -33,8 +33,10 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       >
         <main>{children}</main>
         <footer className="footer">
-          <img src={Logo} className="image-footer" />
-          <p className="title-cop"> © {new Date().getFullYear()} Prestige Vistos. Todos os direitos reservados.</p>
+          <div className="footer-container-logo">
+            <img src={Logo} className="image-footer" />
+            <p className="title-cop"> © {new Date().getFullYear()} Prestige Vistos. Todos os direitos reservados.</p>
+          </div>
           <div className="social-icons">
             <a href="https://www.instagram.com/prestigevistos/?igsh=MWlidnhndGZ6cDhkdw%3D%3D" target="_blank" rel="noreferrer">
               <IconComponent library="fa" name="FaInstagram" size={32} color="#fff" />
