@@ -1,11 +1,11 @@
-import { Evidences } from "./evidenceInterface"
+import { EvidencesInterface } from "./evidenceInterface"
 import { GatsbyFunctionRequest, GatsbyFunctionResponse } from "gatsby"
 
 export default function getEvidences(
   req: GatsbyFunctionRequest,
   res: GatsbyFunctionResponse
 ): void {
-  const evidences: Evidences[] = [
+  const evidences: EvidencesInterface[] = [
     {
       image: "/image/suzana.png",
       evidence: "Guilherme e Prestige Vistos, gostaria de agradecer toda a atenção e profissionalismo que você dedicou a mim e aos meus filhos nesse processo do visto americano. Com você, tudo foi mais tranquilo e organizado. Em breve estarei realizando o sonho da minha filha de conhecer a Disney. Obrigada por tudo!",

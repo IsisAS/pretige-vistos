@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
-import { Evidences } from "../api/evidences/evidenceInterface"
+import { EvidencesInterface } from "../api/evidences/evidenceInterface"
 
 interface UseEvidencesReturn {
-  evidences: Evidences[] | null
+  evidences: EvidencesInterface[] | null
   loading: boolean
 }
 
 export function useEvidences(): UseEvidencesReturn {
-  const [evidences, setEvidences] = useState<Evidences[] | null>(null)
+  const [evidences, setEvidences] = useState<EvidencesInterface[] | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export function useEvidences(): UseEvidencesReturn {
         if (!response.ok) {
           throw new Error("Erro ao buscar evidências")
         }
-        const data: Evidences[] = await response.json()
+        const data: EvidencesInterface[] = await response.json()
         setEvidences(data)
       } catch (error) {
         console.error("Erro ao buscar as evidências:", error)

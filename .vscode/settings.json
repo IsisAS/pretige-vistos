@@ -4,6 +4,14 @@
       "source.fixAll": true
     },
     "editor.formatOnSave": true,
-    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+    "cSpell.words": [
+      "Evidencesinterface"
+    ]
   }
   
