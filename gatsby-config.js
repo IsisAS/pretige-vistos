@@ -16,35 +16,35 @@ module.exports = {
     menus: [
       {
         title: "Início",
-        route: "/home",
+        route: "#home",
         activated: true,
       },
       {
         title: "Depoimentos",
-        route: "/testimony",
+        route: "#testimony",
         activated: false,
       },
       {
         title: "Quem Somos",
-        route: "/whoWeAre",
+        route: "#whoWeAre",
         activated: false,
       },
       {
         title: "Serviços",
-        route: "/services",
+        route: "#services",
         activated: false,
       },
       {
         title: "Perguntas Frequentes",
-        route: "/commonQuestions",
+        route: "#commonQuestions",
         activated: false,
       },
       {
         title: "Contato",
-        route: "/contact",
+        route: "#contact",
         activated: false,
       },
-    ],
+    ],    
   },
   plugins: [
     "gatsby-plugin-image",
