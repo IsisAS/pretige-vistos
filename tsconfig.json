@@ -1,13 +1,16 @@
 {
-    "compilerOptions": {
-      "jsx": "react",
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true,
-    },
-    "include": [
-      "src/**/*.ts",
-      "src/**/*.tsx",
-      "@types/declarations.d.ts" 
-    ]
-  }
-  
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "@types/declarations.d.ts"
+  ]
+}

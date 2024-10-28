@@ -1,10 +1,9 @@
 import * as React from "react";
-import Layout from "../../components/layout";
-
-import WhoAreWe from "../WhoAreWe";
-import Services from "../Services";
-import CommonQuestion from "../CommonQuestion";
-import Evidences from "../Evidences";
+import Layout from "components/layout";
+import Evidences from "pages/Evidences";
+import WhoAreWe from "pages/WhoAreWe";
+import CommonQuestion from "pages/CommonQuestion";
+import Services from "pages/Services";
 
 export default function Home(): JSX.Element {
   return (
