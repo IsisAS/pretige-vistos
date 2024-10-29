@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
-import { CommonQuestionInterface } from "../api/commonQuestion/commonQuestionInterface";
+import { useEffect, useState } from "react"
+import { CommonQuestionInterface } from "../api/commonQuestion/commonQuestionInterface"
 
 type UseCommonQuestionReturn = {
-  commonQuestions: CommonQuestionInterface[];
-};
+  commonQuestions: CommonQuestionInterface[]
+}
 
 export default function useCommonQuestion(): UseCommonQuestionReturn {
-  const [commonQuestions, setCommonQuestions] = useState<CommonQuestionInterface[]>([]);
+  const [commonQuestions, setCommonQuestions] = useState<
+    CommonQuestionInterface[]
+  >([])
 
   useEffect(() => {
     const staticCommonQuestions: CommonQuestionInterface[] = [
@@ -16,7 +18,8 @@ export default function useCommonQuestion(): UseCommonQuestionReturn {
           "O processo inclui preenchimento do formulário DS-160, pagamento da taxa de solicitação (MRV), agendamento de entrevistas no CASV e na Embaixada/Consulado, e comparecimento às entrevistas com a documenta",
       },
       {
-        question: "O que é a taxa MRV no processo de solicitação de visto americano?",
+        question:
+          "O que é a taxa MRV no processo de solicitação de visto americano?",
         answer:
           "A taxa MRV (Machine Readable Visa) é a taxa de solicitação obrigatória para a maioria dos vistos não-imigrantes dos Estados Unidos, como vistos de turismo, estudo e trabalho. Essa taxa cobre os custos de processamento do pedido de visto e deve ser paga antes de agendar a entrevista no consulado ou Embaixada dos EUA",
       },
@@ -30,10 +33,21 @@ export default function useCommonQuestion(): UseCommonQuestionReturn {
         answer:
           "Em alguns casos, é possível renovar até 48 meses após o vencimento sem necessidade de entrevista, dependendo das regras vigentes. Você pode renovar o visto a qualquer momento, inclusive antes de ele expirar.",
       },
-    ];
+      {
+        question:
+          "Posso emitir ou renovar o meu visto americano de qualquer lugar do Brasil?",
+        answer:
+          "Sim, a Prestige auxilia no processo de emissão e renovação do visto de qualquer lugar do Brasil.",
+      },
+      {
+        question: "A agência consegue adiantar a data da entrevista?",
+        answer:
+          "Sim, nós monitoramos diariamente as vagas para agendamento. Desta forma, conseguimos as datas mais próximas para nossos clientes",
+      },
+    ]
 
-    setCommonQuestions(staticCommonQuestions);
-  }, []);
+    setCommonQuestions(staticCommonQuestions)
+  }, [])
 
-  return { commonQuestions };
+  return { commonQuestions }
 }
