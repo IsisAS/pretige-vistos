@@ -2,7 +2,7 @@ import React from "react";
 import { useEvidences } from "../../hooks/useEvidences";
 
 import * as styles from "./styles.module.scss";
-import Carousel from "./Caroussel";
+import Carousel from "./Carousel";
 
 export default function Evidences(): JSX.Element {
     const { evidences } = useEvidences();
