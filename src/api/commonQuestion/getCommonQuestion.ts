@@ -3,7 +3,8 @@ import { CommonQuestionInterface } from "./commonQuestionInterface"
 
 export default function getCommonQuestion(
   req: GatsbyFunctionRequest,
-  res: GatsbyFunctionResponse): void {
+  res: GatsbyFunctionResponse
+): void {
   const commonQuestion: CommonQuestionInterface[] = [
     {
       question: "Qual é o processo para solicitar o visto americano?",
@@ -26,6 +27,17 @@ export default function getCommonQuestion(
       answer:
         "Em alguns casos, é possível renovar até 48 meses após o vencimento sem necessidade de entrevista, dependendo das regras vigentes. Você pode renovar o visto a qualquer momento, inclusive antes de ele expirar.",
     },
+    {
+      question:
+        "Posso emitir ou renovar o meu visto americano de qualquer lugar do Brasil?",
+      answer:
+        "Sim, a Prestige auxilia no processo de emissão e renovação do visto de qualquer lugar do Brasil.",
+    },
+    {
+      question: "A agência consegue adiantar a data da entrevista?",
+      answer:
+        "Sim, nós monitoramos diariamente as vagas para agendamento. Desta forma, conseguimos as datas mais próximas para nossos clientes",
+    },
   ]
-    res.status(200).json(commonQuestion);
+  res.status(200).json(commonQuestion)
 }

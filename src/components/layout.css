@@ -290,7 +290,7 @@ pre tt:after {
 }
 
 .container-title {
-  padding: 100px 32px;
+  padding: 170px 32px;
   display: flex;
   flex-direction: column;
   gap: 43px;
@@ -305,15 +305,21 @@ pre tt:after {
 }
 
 .button-request {
-  background-color: var(--secondary-color);
+  background-color: #f1f1f1;
   border: none;
   border-radius: 15px;
   height: 50px;
-  width: 200px;
-  color: white;
+  width: 230px;
+  color: var(--secondary-color);
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .footer {
@@ -335,7 +341,7 @@ pre tt:after {
 .image-footer {
   width: 160px;
   object-fit: cover;
-  margin:0;
+  margin: 0;
 }
 
 .social-icons {
@@ -371,11 +377,11 @@ p {
     width: 100%;
   }
 
-  .footer{
+  .footer {
     padding: 40px 40px;
   }
 
-  .image-footer{
+  .image-footer {
     width: 90px;
   }
 

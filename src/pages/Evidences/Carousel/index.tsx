@@ -61,7 +61,6 @@ const Carousel: React.FC<CarouselProps> = ({ evidences }) => {
                                 <img src={evidence.image} className={styles.profileImage} />
                                 <div className={styles.containerUserInformation}>
                                     <p className={styles.userName}>{evidence.userName}</p>
-                                    <p className={styles.approvedText}>Aprovada em 2024</p>
                                 </div>
                             </div>
                         </div>

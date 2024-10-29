@@ -23,7 +23,6 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
             O seu sonho de ir para os Estados Unidos está a um clique de
             distância
           </p>
-          <button className="button-request">Solicite seu Visto Agora</button>
         </div>
       </div>
       <div

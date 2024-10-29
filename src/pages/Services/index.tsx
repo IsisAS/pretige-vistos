@@ -21,6 +21,7 @@ export default function Services(): JSX.Element {
                         <p className={styles.descriptionService}>{service.description}</p>
                     </div>
                 ))}
+                <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer" className="button-request">Solicite seu Visto Agora</a>
             </div>
         </div>
     )
