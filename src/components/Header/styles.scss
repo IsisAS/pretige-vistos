@@ -33,7 +33,7 @@
 }
 
 .menu-icon-left {
-  margin-left: 160px;
+  margin-left: 180px;
 }
 
 .title-route,
@@ -51,6 +51,11 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: var(--space-4) 15px;
+  }
+
+  
   .container-menus {
     flex-direction: column;
     position: fixed;

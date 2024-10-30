@@ -45,13 +45,18 @@
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        padding: 70px 20px;
     }
 
     .background {
         width: 100%;
     }
-    
+
     .containerPresentation {
         width: 100%;
+    }
+    
+    .textPresentation {
+        font-size: 14px;
     }
 }

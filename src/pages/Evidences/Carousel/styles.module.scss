@@ -52,7 +52,7 @@
 }
 
 .evidence {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.4;
   white-space: normal;
   text-overflow: ellipsis;
@@ -60,7 +60,6 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
   font-weight: bold;
 }
 
@@ -90,4 +89,14 @@
   font-weight: 500;
   color: var(--light-gray);
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 300px;
+  }
+
+  .evidence {
+    font-size: 12px;
+  }
 }

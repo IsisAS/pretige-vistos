@@ -16,3 +16,9 @@
     margin: 0;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 70px 20px;
+    }
+}

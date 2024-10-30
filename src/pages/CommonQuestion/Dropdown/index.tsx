@@ -22,7 +22,7 @@ export default function Dropdown(): JSX.Element {
                     </div>
                     {openDropdown(index) && (
                         <div className={styles.cardAnswer}>
-                            <p>{question.answer}</p>
+                            <p className={styles.answer}>{question.answer}</p>
                         </div>
                     )}
                 </div>
