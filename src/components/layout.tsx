@@ -13,11 +13,11 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <>
       <div className="container-video">
-        <video autoPlay muted loop className="video-background">
+        <video autoPlay muted loop playsInline className="video-background">
           <source src={BackgroundVideo} type="video/mp4" />
         </video>
         <div className="container-background" />
-        <Header  />
+        <Header />
         <div className="container-title">
           <p className="title">
             O seu sonho de ir para os Estados Unidos está a um clique de

@@ -265,6 +265,7 @@ pre tt:after {
 
 .container-video {
   position: relative;
+  object-fit: cover;
   height: 600px;
   overflow: hidden;
   border-bottom-left-radius: 20px;
