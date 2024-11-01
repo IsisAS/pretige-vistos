@@ -8,7 +8,7 @@ export default function WhoAreWe(): JSX.Element {
             <img src={Background} className={styles.background} />
             <div className={styles.containerPresentation}>
                 <div className={styles.containerHeader}>
-                    <p className={styles.title}>Pretige Vistos</p>
+                    <p className={styles.title}>Prestige Vistos</p>
                     <p className={styles.subtitle}>Quem somos nós</p>
                 </div>
                 <div>
