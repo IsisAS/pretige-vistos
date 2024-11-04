@@ -275,12 +275,19 @@ pre tt:after {
   border-bottom-right-radius: 40px;
 }
 
+.container-video {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 
 .container-title {
-  padding: 220px 32px;
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  flex: 1 1;
+  justify-content: center;
+  padding: 20px;
 }
 
 .title {
@@ -288,7 +295,7 @@ pre tt:after {
   font-family: 'Playfair Display';
   font-size: 32px;
   margin: 0;
-  width: 33%;
+  width: 40%;
 }
 
 .button-request {
@@ -296,7 +303,7 @@ pre tt:after {
   border: none;
   border-radius: 15px;
   height: 50px;
-  width: 230px;
+  width: 280px;
   color: var(--secondary-color);
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -306,6 +313,7 @@ pre tt:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -375,9 +383,4 @@ p {
   .footer-container-logo {
     align-items: flex-start;
   }
-
-  .container-title {
-    padding: 230px 32px;
-  }
-
 }

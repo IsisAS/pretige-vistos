@@ -21,7 +21,10 @@ export default function Services(): JSX.Element {
                         <p className={styles.descriptionService}>{service.description}</p>
                     </div>
                 ))}
-                <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer" className="button-request">Solicite seu Visto Agora</a>
+                  <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer" className="button-request">
+                    Solicite seu Visto Agora
+                    <IconComponent library="fa" name="FaWhatsapp" size={25} color="#1d2647" />
+                </a>
             </div>
         </div>
     )
