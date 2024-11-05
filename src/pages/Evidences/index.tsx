@@ -19,6 +19,10 @@ export default function Evidences(): JSX.Element {
                 </a>
             </div>
             <Carousel evidences={evidences} />
+            <div className={styles.containerArrowRight}>
+                <p  className={styles.titleInfo}>Arraste para o lado</p>
+                <IconComponent library="fa6" name="FaArrowRightLong" size={22} color="#c0c0c0" />
+            </div>
         </div>
     );
 }
