@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Header from "./Header/header";
 import Background from "../assets/images/background.gif";
 import "./layout.css";
-import Logo from "../assets/images/logo.png";
+import Logo from "../assets/images/logoAzul.png";
 import IconComponent from "./Icon";
 
 type LayoutProps = {
@@ -43,10 +43,10 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
           </div>
           <div className="social-icons">
             <a href="https://www.instagram.com/prestigevistos/?igsh=MWlidnhndGZ6cDhkdw%3D%3D" target="_blank" rel="noreferrer">
-              <IconComponent library="fa" name="FaInstagram" size={32} color="#fff" />
+              <IconComponent library="fa" name="FaInstagram" size={32} color="#1D2647" />
             </a>
             <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
-              <IconComponent library="fa" name="FaWhatsapp" size={32} color="#fff" />
+              <IconComponent library="fa" name="FaWhatsapp" size={32} color="#1D2647" />
             </a>
           </div>
         </footer>

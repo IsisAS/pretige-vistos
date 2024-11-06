@@ -4,8 +4,10 @@ import Evidences from "../Evidences";
 import WhoAreWe from "../WhoAreWe";
 import Services from "../Services";
 import CommonQuestion from "../CommonQuestion";
+import GoogleReviews from "../GoogleReviews";
 
 export default function Home(): JSX.Element {
+
   return (
     <Layout>
       <div id="testimony">
@@ -16,6 +18,9 @@ export default function Home(): JSX.Element {
       </div>
       <div id="services">
         <Services />
+      </div>
+      <div id="reviews">
+        <GoogleReviews />
       </div>
       <div id="commonQuestions">
         <CommonQuestion />

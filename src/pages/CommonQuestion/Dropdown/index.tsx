@@ -15,9 +15,9 @@ export default function Dropdown(): JSX.Element {
                     <div className={styles.card} onClick={() => setOpenDropdown(index)}>
                         <p className={styles.title}>{question.question}</p>
                         {openDropdown(index) ? (
-                            <FaIcons.FaAngleUp size={24} color="black" />
+                            <FaIcons.FaAngleUp size={24} color="#B98119" />
                         ) : (
-                            <FaIcons.FaAngleDown size={24} color="black" />
+                            <FaIcons.FaAngleDown size={24} color="#B98119" />
                         )}
                     </div>
                     {openDropdown(index) && (

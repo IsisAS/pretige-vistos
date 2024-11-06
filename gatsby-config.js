@@ -35,6 +35,11 @@ module.exports = {
         activated: false,
       },
       {
+        title: "Avaliações",
+        route: "#reviews",
+        activated: false,
+      },
+      {
         title: "Perguntas Frequentes",
         route: "#commonQuestions",
         activated: false,
