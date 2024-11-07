@@ -46,7 +46,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
             <a href="https://www.instagram.com/prestigevistos/?igsh=MWlidnhndGZ6cDhkdw%3D%3D" target="_blank" rel="noreferrer">
               <IconComponent library="ri" name="RiInstagramFill" size={20} color="#1D2647" />
             </a>
-            <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIVCAEQLhgnGK8BGMcBGIAEGIoFGI4FMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHtIBCDI1NzdqMGo0qAIAsAIB&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KUmGvxrjM1qTMYaV368OIim3&daddr=Av.+Jacarand%C3%A1,+20+-+%C3%81guas+Claras,+Bras%C3%ADlia+-+DF,+71927-540+-+%C3%81guas+Claras,+Bras%C3%ADlia+-+DF,+72215-200" target="_blank" rel="noopener noreferrer">
               <IconComponent library="md" name="MdLocationOn" size={20} color="#1D2647" />
             </a>
           </div>
