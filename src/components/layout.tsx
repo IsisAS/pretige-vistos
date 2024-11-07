@@ -37,18 +37,21 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       >
         <main>{children}</main>
         <footer className="footer">
-          <div className="footer-container-logo">
-            <img src={Logo} className="image-footer" />
-            <p className="title-cop"> © {new Date().getFullYear()} Prestige Vistos. Todos os direitos reservados.</p>
-          </div>
+          <img src={Logo} className="image-footer" />
+          <div className="address-title">Av. Jacarandá, 20 - Águas Claras, Brasília - DF, 71927-540 </div>
           <div className="social-icons">
+            <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
+              <IconComponent library="io" name="IoLogoWhatsapp" size={20} color="#1D2647" />
+            </a>
             <a href="https://www.instagram.com/prestigevistos/?igsh=MWlidnhndGZ6cDhkdw%3D%3D" target="_blank" rel="noreferrer">
-              <IconComponent library="fa" name="FaInstagram" size={32} color="#1D2647" />
+              <IconComponent library="ri" name="RiInstagramFill" size={20} color="#1D2647" />
             </a>
             <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
-              <IconComponent library="fa" name="FaWhatsapp" size={32} color="#1D2647" />
+              <IconComponent library="md" name="MdLocationOn" size={20} color="#1D2647" />
             </a>
           </div>
+          <div className="lineSeparator"></div>
+          <p className="title-cop"> © {new Date().getFullYear()} Prestige Vistos. Todos os direitos reservados.</p>
         </footer>
       </div>
     </>

@@ -3,6 +3,8 @@ import * as FaIcons from "react-icons/fa";
 import * as MdIcons from "react-icons/md";
 import * as AiIcons from "react-icons/ai";
 import * as Fa6Icons from "react-icons/fa6";
+import * as IoIcons from "react-icons/io";
+import * as RiIcons from "react-icons/ri";
 
 interface IconComponentProps {
     library: string;
@@ -17,7 +19,9 @@ const IconComponent: React.FC<IconComponentProps> = ({ library, name, size = 24,
         fa: FaIcons,
         md: MdIcons,
         ai: AiIcons,
-        fa6: Fa6Icons
+        fa6: Fa6Icons,
+        io: IoIcons,
+        ri: RiIcons,
     };
 
     const IconLibrary = libraries[library];

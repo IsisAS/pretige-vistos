@@ -5,6 +5,12 @@
   padding: 70px 40px;
 }
 
+.containerHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .containerTitle {
   display: flex;
   flex-direction: column;
@@ -14,14 +20,14 @@
 .title {
   color: white;
   font-family: 'Playfair Display';
-  font-size: 32px;
+  font-size: 2rem;
   margin: 0;
 }
 
 .subtitle {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .titleInfo {

@@ -15,7 +15,7 @@ export default function useCommonQuestion(): UseCommonQuestionReturn {
       {
         question: "Qual é o processo para solicitar o visto americano?",
         answer:
-          "O processo inclui preenchimento do formulário DS-160, pagamento da taxa de solicitação (MRV), agendamento de entrevistas no CASV e na Embaixada/Consulado, e comparecimento às entrevistas com a documenta",
+          "O processo envolve o preenchimento do formulário DS-160, o pagamento da taxa MRV, o agendamento das entrevistas no CASV e na Embaixada/Consulado, além do comparecimento às entrevistas com a documentação necessária.",
       },
       {
         question:
@@ -31,7 +31,7 @@ export default function useCommonQuestion(): UseCommonQuestionReturn {
       {
         question: "Preciso agendar uma entrevista para renovar meu visto?",
         answer:
-          "Em alguns casos, é possível renovar até 48 meses após o vencimento sem necessidade de entrevista, dependendo das regras vigentes. Você pode renovar o visto a qualquer momento, inclusive antes de ele expirar.",
+          "Em alguns casos, é possível renovar o visto até 48 meses após o vencimento sem necessidade de entrevista, conforme as regras vigentes. A renovação pode ser feita a qualquer momento, inclusive antes do visto expirar",
       },
       {
         question:

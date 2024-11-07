@@ -13,6 +13,9 @@ export default function WhoAreWe(): JSX.Element {
                 </div>
                 <div>
                     <div className={styles.textPresentation}>
+                        ✔ Estamos localizados em Brasília -DF
+                    </div>
+                    <div className={styles.textPresentation}>
                         ✔ Com mais de 4 anos de experiência, nossa missão é facilitar sua viagem internacional.
                         Cuidamos de toda a burocracia para você não ter estresse.
                     </div>
