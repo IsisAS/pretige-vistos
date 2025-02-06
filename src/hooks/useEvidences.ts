@@ -37,6 +37,16 @@ export function useEvidences(): UseEvidencesReturn {
         evidence: "Excelente atendimento. O processo foi todo muito tranquilo e extremamente rápido. Sanaram todas as minhas dúvidas e o acompanhamento da equipe junto a embaixada e a mim foi excelente. Recomendo a todos.",
         userName: "Fábio Antonioli",
       },
+      {
+        image: "/image/VictorKopp.jpeg",
+        evidence: "Afirmo com toda certeza que valeu demais contar com o apoio e assessoria da Prestige Vistos, em especial ao Sr. Guilherme. Eu e minha esposa fomos muito bem assessorados desde o início do processo do Visto norte-americano. O Sr. Guilherme nos preparou e nos conduziu à aprovação na entrevista consular da Embaixada Americana. Recomendo a todos a Prestige Vistos!",
+        userName: "Victor Kopp"
+      },
+      {
+        image: "/image/ThaízaSoares.jpeg",
+        evidence: "Na Prestige, fui assessorada pelo Guilherme, que demonstrou bastante conhecimento e profissionalismo em relação a minha demanda, analisando o meu caso e me ajudando a entender o melhor tipo de visto de acordo com a minha necessidade. Do primeiro contato até hoje, Guilherme e a Prestige sempre me atendem super bem, são rápidos no retorno de mensagens e muito atenciosos com nossas dúvidas e anseios, bastante didáticos também nas explicações. O atendimento é realmente individualizado, onde cada caso é analisado e entendido no detalhe. Sou grata pelo apoio da Prestige e do Guilherme durante todo o processo do meu visto! Voltarei mais vezes com certeza, para alcançar com o apoio deles outros sonhos",
+        userName: "Thaíza Soares"
+      },
     ];
 
     setEvidences(staticEvidences);

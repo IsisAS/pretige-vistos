@@ -27,6 +27,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 10px;
+  overflow: scroll;
 }
 
 .headerCard {
@@ -69,7 +71,7 @@
   margin: 0;
 }
 
-.containerUserInformation{
+.containerUserInformation {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -82,7 +84,7 @@
   margin: 0;
 }
 
-.approvedText{
+.approvedText {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
