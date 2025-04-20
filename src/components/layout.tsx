@@ -38,7 +38,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
         <main>{children}</main>
         <footer className="footer">
           <img src={Logo} className="image-footer" />
-          <div className="address-title">Av. Jacarandá, 20 - Águas Claras, Brasília - DF, 71927-540 </div>
+          <div className="address-title">Edifício Serra Dourada, SCS Q. 2 BL C Lote Nº 22, Sala 108 - Asa Sul, Brasília - DF, 70300-902</div>
           <div className="social-icons">
             <a href="https://wa.me/5561994530124" target="_blank" rel="noopener noreferrer">
               <IconComponent library="io" name="IoLogoWhatsapp" size={20} color="#1D2647" />
