@@ -21,6 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start;
 }
 
 .service {
@@ -28,6 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .containerIconTitle {
@@ -53,6 +55,7 @@
     font-weight: 300 !important;
     font-size: 1rem;
     margin: 0;
+    text-align: center;
 }
 
 .containerIcon {

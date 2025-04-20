@@ -27,9 +27,9 @@ export function useServices(): UseServiceReturns {
         library: "fa",
       },
       {
-        title: "Emissão de Passaporte",
+        title: "Emissão ou Renovação do passaporte",
         description:
-          "Precisa de um passaporte para suas próximas viagens? Nossa equipe orienta e acompanha cada etapa do processo de emissão, garantindo que seus documentos estejam corretos e dentro dos prazos.",
+          "Precisa de um passaporte ou renovar o mesmo para suas próximas viagens? Nossa equipe orienta e acompanha cada etapa do processo de emissão, garantindo que seus documentos estejam corretos e dentro dos prazos.",
         icon: "FaGlobe",
         library: "fa",
       },
@@ -41,17 +41,10 @@ export function useServices(): UseServiceReturns {
         library: "fa",
       },
       {
-        title: "ETA Canadense",
+        title: "ETA Canadense ou Visto de Turista Canadense",
         description:
-          "Cuidamos da solicitação da ETA para o Canadá, agilizando o processo para que você tenha tudo pronto antes da sua viagem, sem complicações e com total suporte.",
+          "CCuidamos da solicitação do ETA para o Canadá ou se precisar do visto de turista, nos fazemos também. Agilizando o processo para que você tenha tudo pronto antes da sua viagem, sem complicações e com total suporte.",
         icon: "FaCanadianMapleLeaf",
-        library: "fa",
-      },
-      {
-        title: "Apostilamento e Tradução Juramentada",
-        description:
-          "Oferecemos serviços completos de apostilamento e tradução juramentada para qualquer país e idioma, assegurando que seus documentos estejam prontos para uso internacional de acordo com as normas legais.",
-        icon: "FaFileSignature",
         library: "fa",
       },
     ];
