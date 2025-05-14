@@ -2,56 +2,69 @@ import { useState, useEffect } from "react";
 import { ServiceInterface } from "../api/services/serviceInterface";
 
 interface UseServiceReturns {
-  services: ServiceInterface[] | null;
+  touristVisa: ServiceInterface[] | null;
+  electronicsVisa: ServiceInterface[] | null;
   loading: boolean;
+  tab: ITab[];
+  changeTab: (tabSelected: ITab) => void;
 }
 
+interface ITab {
+  title: string;
+  selected: boolean;
+}
 export function useServices(): UseServiceReturns {
-  const [services, setServices] = useState<ServiceInterface[] | null>(null);
+  const [touristVisa, setTouristVisa] = useState<ServiceInterface[] | null>(null);
+  const [electronicsVisa, setElectronicsVisa] = useState<ServiceInterface[] | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [tab, setTab] = useState<ITab[]>(
+    [
+      {
+        title: "Vistos de turismo",
+        selected: true,
+      },
+      {
+        title: "Vistos eletrônicos",
+        selected: false
+      }
+    ]
+  );
 
   useEffect(() => {
-    const staticServices: ServiceInterface[] = [
-      {
-        title: "Obtenção do Primeiro Visto Americano",
-        description:
-          "Especialistas em todo o processo de solicitação de visto americano, cuidamos desde o preenchimento do formulário DS-160 até o treinamento personalizado para a entrevista consular, garantindo que você esteja preparado para cada etapa.",
-        icon: "FaPassport",
-        library: "fa", // Biblioteca Font Awesome
-      },
-      {
-        title: "Renovação de Visto à Distância",
-        description:
-          "Facilitamos a renovação do seu visto sem que você precise sair de casa. Oferecemos um serviço rápido e eficiente, cuidando de todo o processo com segurança e precisão, para que você possa focar em seus planos de viagem.",
-        icon: "FaSyncAlt",
-        library: "fa",
-      },
-      {
-        title: "Emissão ou Renovação do passaporte",
-        description:
-          "Precisa de um passaporte ou renovar o mesmo para suas próximas viagens? Nossa equipe orienta e acompanha cada etapa do processo de emissão, garantindo que seus documentos estejam corretos e dentro dos prazos.",
-        icon: "FaGlobe",
-        library: "fa",
-      },
-      {
-        title: "Autorização Eletrônica de Viagem para a Nova Zelândia (NZeTA)",
-        description:
-          "Se o seu destino é a Nova Zelândia, realizamos todo o processo de solicitação da NZeTA de forma rápida e descomplicada, para que você possa se concentrar no planejamento da sua viagem.",
-        icon: "FaPlaneDeparture",
-        library: "fa",
-      },
-      {
-        title: "ETA Canadense ou Visto de Turista Canadense",
-        description:
-          "CCuidamos da solicitação do ETA para o Canadá ou se precisar do visto de turista, nos fazemos também. Agilizando o processo para que você tenha tudo pronto antes da sua viagem, sem complicações e com total suporte.",
-        icon: "FaCanadianMapleLeaf",
-        library: "fa",
-      },
+    const touristVisa: ServiceInterface[] = [
+      { title: "Visto Americano (1°visto ou renovação)", icon: "estadosUnidos", library: "fa" },
+      { title: "Visto Canadense", icon: "canada", library: "fa" },
+      { title: "Visto Australiano", icon: "autralia", library: "fa" },
+      { title: "Visto Mexicano", icon: "mexico", library: "fa" },
+      { title: "Passaporte Brasileiro (emissão ou renovação)", icon: "brazil", library: "fa" },
     ];
 
-    setServices(staticServices);
+    const electronicsVisa: ServiceInterface[] = [
+      { title: "ESTA Americano", icon: "estadosUnidos", library: "fa" },
+      { title: "ETA Canadense", icon: "canada", library: "fa" },
+      { title: "E-Visa Australiano", icon: "autralia", library: "fa" },
+      { title: "ETA Reino Unido", icon: "reinoUnido", library: "fa" },
+      { title: "ETIAS - Autorização eletrônica para Europa", icon: "europa", library: "fa" },
+      { title: "K-ETA Coreano", icon: "corea", library: "fa" },
+      { title: "NZeTA - Autorização eletrônica para a Nova Zelândia", icon: "newzealand", library: "fa" },
+      { title: "E-Visa paquistanês", icon: "paquistao", library: "fa" },
+      { title: "E-Visa Brasileiro para estrangeiros", icon: "brazil", library: "fa" },
+    ];
+
+    setTouristVisa(touristVisa);
+    setElectronicsVisa(electronicsVisa);
     setLoading(false);
   }, []);
 
-  return { services, loading };
+  const changeTab = (tabSelected: ITab) => {
+    const newTab = tab.map((item) => {
+      if (item.title === tabSelected.title) {
+        return { ...item, selected: true };
+      }
+      return { ...item, selected: false };
+    });
+    setTab(newTab);
+  }
+
+  return { touristVisa, electronicsVisa, loading, tab, changeTab };
 }

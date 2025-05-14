@@ -267,7 +267,7 @@ pre tt:after {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: cover;
   left: 0;
   z-index: -1;
@@ -275,27 +275,36 @@ pre tt:after {
   border-bottom-right-radius: 40px;
 }
 
-.container-video {
-  height: 600px;
+.container-background {
+  min-height: 600px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  flex-direction: column;
+  background-color: #121935;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 100px 40px;
 }
 
 .container-title {
   display: flex;
   flex-direction: column;
-  flex: 1 1;
-  justify-content: center;
   padding: 20px;
+  gap: 20px;
+}
+
+.ilustracao {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
 }
 
 .title {
   color: white;
   font-family: 'Playfair Display';
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
-  width: 40%;
 }
 
 .button-request {
@@ -368,13 +377,14 @@ pre tt:after {
 p {
   margin: 0;
 }
-.menu-title{
+
+.menu-title {
   font-family: "Montserrat", sans-serif;
   color: #808080;
   font-weight: 400;
 }
 
-.address-title{
+.address-title {
   font-family: "Montserrat", sans-serif;
   color: #808080;
   font-weight: 400;
@@ -383,15 +393,47 @@ p {
   font-size: 14px;
 }
 
-.lineSeparator{
+.lineSeparator {
   background-color: #e1e1e1;
   height: 1px;
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .ilustracao {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+
 @media (max-width: 768px) {
+  .container-title {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .container-background {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ilustracao {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+
   .title {
     width: 100%;
+    font-size: 1.8rem;
   }
 
   .footer {
@@ -408,10 +450,11 @@ p {
     align-items: flex-start;
   }
 
-  .social-icons{
+  .social-icons {
     margin-top: 0;
   }
-  .address-title{
+
+  .address-title {
     width: 100%;
     font-size: 14px;
   }

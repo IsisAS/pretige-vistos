@@ -44,6 +44,16 @@ export default function useCommonQuestion(): UseCommonQuestionReturn {
         answer:
           "Sim, nós monitoramos diariamente as vagas para agendamento. Desta forma, conseguimos as datas mais próximas para nossos clientes.",
       },
+      {
+        question: "Qual a diferença entre o ETA e o visto Canadense?",
+        answer:
+          "Quem tem visto americano válido, pode tirar apenas o ETA. Mas se a viagem for de Cruzeiro, deverá tirar um visto de turista.",
+      },
+      {
+        question: "O que é ESTA Americano?",
+        answer:
+          "É uma autorização eletrônica de viagem exigida pelos Estados Unidos para cidadãos de países participantes do Programa de Isenção de Visto.",
+      },
     ]
 
     setCommonQuestions(staticCommonQuestions)

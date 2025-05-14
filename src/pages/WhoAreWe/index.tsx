@@ -1,6 +1,6 @@
 import React from "react";
 import * as styles from "./styles.module.scss";
-import Background from "../../assets/images/backgrounPassport.png";
+import Background from "../../assets/images/backgrounPassport.jpg";
 
 export default function WhoAreWe(): JSX.Element {
     return (
